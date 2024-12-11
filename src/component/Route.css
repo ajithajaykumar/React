@@ -1,0 +1,73 @@
+.App{
+    background-color:grey;
+    color:white;
+    max-width:200px;
+    height:100vh;
+    align-content: center;
+    text-align:center;
+}
+.App>ul,.App>ul>li>a{
+    line-height: 50px;
+    text-decoration:none;
+    color:white;
+}
+ul{
+    list-style-type:none;
+}
+body{
+    background-color:blueviolet;
+    margin: 0;
+    padding:0;
+}
+.H{
+    width:85.3%;
+    float:left;
+    position:absolute;
+    left:200px;
+    top:0;
+    height:100vh;
+    background-color: aqua;
+    color:rgb(54, 45, 45);
+    /* text-indent:20px; */
+}
+.stu{
+    width:85.3%;
+    float:left;
+    position:absolute;
+    left:200px;
+    top:0;
+    height:100vh;
+    background-color: rgb(157, 163, 100);
+    color:rgb(231, 220, 220);
+    /* text-indent:20px; */
+}
+.tea{
+    width:85.3%;
+    float:left;
+    position:absolute;
+    left:200px;
+    top:0;
+    height:100vh;
+    background-color: rgb(182, 74, 137);
+    color:rgb(236, 230, 230);
+    /* text-indent:20px; */
+}
+.sch{
+    width:85.3%;
+    position:absolute;
+    left:200px;
+    top:0;
+    height:100vh;
+    background-color: rgb(52, 173, 123);
+    color:rgb(245, 235, 235);
+    /* text-indent:20px; */
+}
+.commonDiv{
+width:300px;
+height: 300px;
+background-color: white;
+align-content: center;
+position:absolute;
+    left:430px;
+    line-height:50px;
+}
