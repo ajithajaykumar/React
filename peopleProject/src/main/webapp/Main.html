@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Justice</title>
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+	type="text/javascript"></script>
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous" type="text/javascript"></script>
+
+</head>
+<body>
+	<div class="main-header">
+		<header>
+			<div class="nav">
+				<div class="left-content">
+					<h5 class="spanmain">Justice</h5>
+					<div class="complaint-input">
+						<input type='text'></input>
+						<div>
+							<li><i class=" fa fa-brands fa-searchengin"></i></li>
+						</div>
+					</div>
+				</div>
+				<nav class="innerNav1">
+					<ul>
+						<li><i class=" fa fa-solid fa-home"></i><a href="">Home</a></li>
+						<li><i class=" fa fa-solid fa-bars"></i><a href="">Register</a></li>
+					</ul>
+				</nav>
+				<nav class="innerNav2">
+					<ul>
+						<li><i class=" fa fa-solid fa-bars"></i></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+	</div>
+	<div class="content-body">
+		<div class="complaints-body">
+			<div id="complaints">
+				<div>Complaints:</div>
+				<div id="complaint-text"></div>
+			</div>
+			<div class="complaint-add">
+				<button data-bs-toggle="modal" data-bs-target="#myModal">Add
+					Complaints</button>
+			</div>
+		</div>
+		<div class="main-comments">
+			<div class="video-body">
+				<video src="images/farmer.mp4" autoPlay controls></video>
+			</div>
+			<div class="comments">
+				<div class="like">
+					<div class="description-title">Vivasayam vazharpom kapom
+						asddjkbidd askdbiubSD sbsiuq dsiuQBD Uwfb bib IUbba Iubdi
+						IubdiuBDiquQD bvdIUDIBD iidbiUBDIBQ IBDIb IDBUiub QDIUBB.....</div>
+					...
+					<div class="commentLike">
+						<nav>
+							<ul>
+								<li><i class=" fa fa-regular fa-heart"></i></li>
+								<li><i class=" fa fa-regular fa-comment"></i></li>
+								<li><button>Comment</button></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="comment-content"></div>
+			</div>
+		</div>
+	</div>
+	<div class="Modal-main">
+		<div class="modal" id="myModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">Write Your Complaints</h4>
+						<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+					</div>
+					<div class="modal-body">
+						<input type='text' placeholder='UserName'></input>
+						<textarea placeholder='Complaint here' id="textarea" value=""
+							onChange="" cols="" rows=""></textarea>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-primary" id="add-complaint"
+							data-bs-dismiss="modal">Add complaint</button>
+						<button type="button" class="btn btn-danger"
+							data-bs-dismiss="modal">Close</button>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(()=>{
+	$("#add-complaint").click(
+            function(){
+                let get=document.getElementsByTagName("textarea")[0].value
+                $('#complaint-text').append(`<div id=''><div id='newDiv'>${get}</div><div></li><li>Reply</li></ul></div></div>`)
+                // let add=document.getElementById('newDiv').innerHTML=get
+            }
+        );
+	}
+	)</script>
+</body>
+</html>

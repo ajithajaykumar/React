@@ -1,0 +1,523 @@
+* {
+	font-size: 18px;
+	list-style-type: none;
+	box-sizing: border-box;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.body {
+	box-sizing: content-box;
+	margin: 0px;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("images/paddy1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	background-attachment: fixed;
+	overflow-y: scroll;
+}
+
+.body::-webkit-scrollbar, .registerBody::-webkit-scrollbar {
+	width: 10px;
+}
+
+.body::-webkit-scrollbar-track, .registerBody::-webkit-scrollbar-track {
+	/* background-color: white; */
+	border-radius: 12px;
+}
+
+.body::-webkit-scrollbar-thumb, .registerBody::-webkit-scrollbar-thumb {
+	background-color: rgb(143, 118, 118, 0.5);
+	border-radius: 12px;
+	height: 70px;
+}
+
+/* :root{
+    --col:aqua;
+    --bg-color:bisque;
+} */
+.carousel-body {
+	margin-left: 120px;
+	margin-top: 100px;
+	margin-right: 120px;
+}
+
+.nav>nav>ul {
+	align-items: center;
+	display: flex;
+	margin-bottom: 0 !important;
+}
+
+.nav a {
+	text-decoration: none;
+	color: white;
+	border-bottom: none !important;
+}
+
+.nav {
+	margin: 0;
+	padding: 0;
+	color: white;
+	align-items: center;
+	margin: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav nav ul li:hover, .nav a:hover {
+	box-sizing: border-box;
+	color: rgb(133, 233, 228);
+	border-bottom: 1px solid white;
+	cursor: pointer;
+}
+
+.innerNav1 ul li {
+	opacity: 1;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+.innerNav1 {
+	margin-left: 50px;
+}
+
+.innerNav2 {
+	margin-right: 50px;
+}
+
+.innerNav2 ul li {
+	opacity: 10;
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.span {
+	margin-left: 20px;
+	margin-top: 30px;
+	font-size: 35px;
+	color: orange;
+}
+
+.spanmain {
+	font-size: 20px;
+	color: orange;
+	margin-right: 30px;
+}
+
+.left-content {
+	display: flex;
+}
+
+/*register page*/
+.registerBody {
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+	width: 100vw;
+	background-image: url("images/rain.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	height: 100vh;
+	position: fixed;
+}
+
+.registerForm {
+	text-align: center;
+	width: 35%;
+	height: 320px;
+	margin-left: 34.5%;
+	margin-top: 100px;
+	background-color: rgb(61, 54, 54, 0.4);
+	padding: 10px;
+	color: white;
+	border-radius: 10px;
+}
+
+.innerNav2 ul .bar {
+	display: none;
+}
+
+.registerForm input {
+	margin-top: 40px;
+	margin-bottom: 30px;
+	display: block;
+	width: 100%;
+	border: none;
+	outline: none;
+	background-color: rgb(61, 54, 54, 0.5);
+	color: white;
+	height: 50px;
+	padding-left: 20px;
+}
+
+.registerForm h3 {
+	color: orange;
+}
+
+.registerForm button {
+	outline: none;
+	border: none;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	border-radius: 20px;
+	background-color: rgb(14, 13, 13, 0.8);
+	color: white;
+}
+
+.registerForm button:hover {
+	color: orange;
+}
+
+@media ( max-width :400px) {
+	.registerForm {
+		width: 60% !important;
+		margin-left: 15% !important;
+		font-size: 16px;
+	}
+	.carousel {
+		margin-left: 25px !important;
+		margin-top: 120px;
+		margin-right: 25px !important;
+	}
+	.innerNav1 ul {
+		margin-left: 100px !important;
+	}
+}
+
+@media screen and (max-width:500px) {
+	.registerForm {
+		width: 70% !important;
+		margin-left:16% !important;
+	}
+	.innerNav2 ul li {
+		opacity: 10;
+		display: none;
+		margin-left: 20px;
+	}
+	.innerNav1 ul {
+		margin-left: 150px;
+	}
+	.carousel {
+		margin-left: 50px;
+		margin-top: 100px;
+		margin-right: 50px;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.innerNav2 ul li:nth-last-child(2) {
+		display: none;
+	}
+	.registerForm {
+		width: 60%;
+		margin-left: 31%;
+	}
+}
+
+@media screen and (max-width:700px) {
+	.carousel {
+		margin-left: 100px;
+		margin-top: 100px;
+		margin-right: 100px;
+	}
+	.registerForm {
+		width: 60%;
+		margin-left: 20%;
+	}
+}
+
+@media screen and (max-width:1000px) and (max-height:500px) {
+	.carousel {
+		margin-left: 100px;
+		margin-top: 20px;
+		margin-right: 100px;
+		margin-bottom: 50px;
+	}
+	.registerForm {
+		margin-top: 80px !important;
+		margin-bottom: 50px;
+		width: 60%;
+		margin-left: 20%;
+	}
+}
+
+@media screen and (max-width:414px) and (max-height:918px) {
+	.carousel {
+		margin-left: 50px;
+		margin-top: 50px;
+		margin-right: 50px;
+		margin-bottom: 50px;
+	}
+	.registerForm {
+		margin-top: 130px !important;
+		margin-bottom: 50px;
+		width: 50%;
+		font-size: 16px !important;
+		margin-left: 15%;
+	}
+}
+
+@media screen and (min-width:700px) and (max-height:1180px) {
+	.carousel {
+		margin-left: 50px;
+		margin-top: 50px;
+		margin-right: 50px;
+		margin-bottom: 50px;
+	}
+	.registerForm {
+		margin-top: 80px !important;
+		margin-bottom: 50px;
+		width: 60%;
+		font-size: 16px !important;
+		margin-left: 20%;
+	}
+}
+
+@media screen and (min-width:900px) and (max-height:1400px) {
+	.carousel {
+		margin-left: 50px;
+		margin-top: 100px;
+		margin-right: 50px;
+		margin-bottom: 50px;
+	}
+	.registerForm {
+		margin-top: 80px !important;
+		margin-bottom: 40px;
+		width: 60%;
+		font-size: 16px !important;
+		margin-left: 21%;
+		padding: 20px;
+		height: 350px;
+	}
+	.nav {
+		font-size: 60px !important;
+		margin-top: 10px !important;
+	}
+}
+
+@media screen and (min-width:300px) and (max-width:850px) {
+	.innerNav1 {
+		margin-left: 20px;
+	}
+}
+
+/* complaint-input */
+.complaint-input input {
+	outline: none;
+	border: none;
+	background-color: white !important;
+	width: 85%;
+}
+
+.complaint-input div {
+	border-radius: 20px;
+	height: 30px;
+	border: 10px;
+	width: 15%;
+	align-content: center;
+	text-align: center;
+}
+
+.complaint-input div:hover {
+	cursor: pointer;
+	background-color: grey;
+}
+
+.complaint-input {
+	border-radius: 2px;
+	color: black;
+	display: flex;
+	border: 1px solid grey;
+}
+
+/* main page */
+.main-comments {
+	width: 55%;
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.complaints-body {
+	width: 45%;
+	/* background-color: aqua; */
+	height: 90vh;
+}
+
+#complaints {
+	overflow-y: scroll;
+	border: 1px solid grey;
+	padding: 30px;
+	border-radius: 20px;
+	height: 90%;
+	color: red;
+}
+
+#complaint-text {
+	margin-bottom: 40px;
+	border-radius: 20px;
+}
+
+.complaint-add {
+	border: 0;
+	height: 10%;
+}
+
+.complaint-add>button {
+	border-radius: 20px;
+	background-color: black;
+	color: white;
+	height: 100%;
+	width: 100%;
+}
+
+.complaint-add>button:hover {
+	color: orange;
+}
+
+.video-body {
+	border: 1px solid grey;
+	border-radius: 20px;
+	width: 100%;
+	background-color: black;
+	height: 60vh;
+}
+
+.video-body video {
+	border-radius: 20px;
+	width: 100%;
+	height: 60vh;
+}
+
+.comments {
+	border-radius: 20px;
+	border: 1px solid grey;
+	height: 40vh;
+	width: 100%;
+	/* background-color: blueviolet; */
+}
+
+.content-body {
+	padding: 0 5px 0 5px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
+}
+
+.main-header {
+	padding: 0 20px 0 20px;
+	margin: 0;
+	box-sizing: border-box;
+	height: 8vh;
+	/* background-color: red; */
+}
+
+.main-header .nav  ul li, .main-header .nav  ul a {
+	color: grey;
+}
+
+.main-header nav {
+	justify-content: space-around;
+}
+
+.main-header nav .innerNav1 {
+	margin-right: 40px !important;
+}
+
+.main-header .nav .innerNav2 ul li:hover {
+	color: black;
+	background-color: grey;
+}
+
+.like {
+	height: 30%;
+	border: 1px solid grey;
+	border-radius: 20px;
+}
+
+.comment-content {
+	height: 70%;
+}
+/* comments */
+.like {
+	align-items: center;
+	display: flex;
+	align-items: center;
+	opacity: 0.8;
+}
+
+.like nav ul {
+	display: flex;
+	justify-content: space-evenly;
+	padding-right: 5px;
+}
+
+.like nav ul li {
+	padding-top: 20px;
+	padding-right: 35px;
+}
+
+.like nav ul li:last-child {
+	padding-top: 15px;
+	padding-right: 2px;
+}
+
+.like nav ul button {
+	background-color: black;
+	color: white;
+	border-radius: 20px;
+}
+
+.like nav ul button:hover {
+	color: orange;
+	opacity: 10;
+}
+
+.description-title {
+	color: black;
+	overflow-y: hidden;
+	width: 50%;
+	height: 25px;
+	overflow-x: hidden;
+	padding-left: 20px;
+}
+
+.commentLike {
+	width: 50%;
+}
+/* complaint-newDiv */
+#complaint-text div {
+	padding-left: 20px;
+	margin-top: 20px;
+	color: black !important;
+}
+
+#complaint-text div div:last-child {
+	color: blue !important;
+	cursor: pointer;
+}
+/* Modal creation */
+.modal-body {
+	display: flex;
+	flex-direction: column;
+	padding: 20px !important;
+}
+
+.modal-body input {
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid grey !important;
+	background-color: white;
+	margin-bottom: 30px;
+}
+
+.modal-body textarea {
+	border-radius: 5px;
+	padding: 10px;
+}
