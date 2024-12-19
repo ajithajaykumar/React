@@ -1,10 +1,13 @@
+
 * {
 	font-size: 18px;
 	list-style-type: none;
 	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 }
-
+.adminBody{
+	background-image: url("images/download.jpeg") !important;
+}
 .body {
 	box-sizing: content-box;
 	margin: 0px;
@@ -110,7 +113,21 @@
 .left-content {
 	display: flex;
 }
+/*user body*/
 
+.userBody{
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+	width: 100vw;
+	background-image: url("images/back.jpeg") !important;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	height: 100vh;
+	position: fixed;
+}
 /*register page*/
 .registerBody {
 	margin: 0;
@@ -174,7 +191,8 @@
 	color: orange;
 }
 
-@media ( max-width :400px) {
+
+@media screen and (max-width :400px) {
 	.registerForm {
 		width: 60% !important;
 		margin-left: 15% !important;
@@ -191,6 +209,13 @@
 }
 
 @media screen and (max-width:500px) {
+	.nav .innerNav2 .list1 li:nth-last-child(3){
+    display:flex;
+    }
+    
+   .nav .complaint-input{
+    display:none;
+    }
 	.registerForm {
 		width: 70% !important;
 		margin-left:16% !important;
@@ -211,8 +236,21 @@
 }
 
 @media screen and (max-width:600px) {
-	.innerNav2 ul li:nth-last-child(2) {
-		display: none;
+	
+	.complaints-body{
+	display:none;
+	}
+	.content-body{
+	width:100%;
+	}
+	.main-comments{
+	width:100% !important;
+	}
+	.comments{
+	width:100% !important;
+	}
+	.video-body,.video-body video{
+	width:100% !important;
 	}
 	.registerForm {
 		width: 60%;
@@ -221,6 +259,9 @@
 }
 
 @media screen and (max-width:700px) {
+		.innerNav1{
+	display:none;
+	}
 	.carousel {
 		margin-left: 100px;
 		margin-top: 100px;
@@ -230,6 +271,7 @@
 		width: 60%;
 		margin-left: 20%;
 	}
+	
 }
 
 @media screen and (max-width:1000px) and (max-height:500px) {
@@ -280,6 +322,9 @@
 }
 
 @media screen and (min-width:900px) and (max-height:1400px) {
+.nav .innerNav2 .list1 li:nth-last-child(3){
+    display:none;
+    }
 	.carousel {
 		margin-left: 50px;
 		margin-top: 100px;
@@ -304,6 +349,43 @@
 @media screen and (min-width:300px) and (max-width:850px) {
 	.innerNav1 {
 		margin-left: 20px;
+	}
+}
+
+@media screen and (max-width:900px)
+{
+    .nav .innerNav2 .list1 li:nth-last-child(2),.nav .innerNav2 .list1 li:nth-last-child(1){
+    display:none;
+    }
+	.nav{
+	margin-top:0px !important;
+	padding-top:8px;
+	margin-bottom:10px;
+	}
+	
+	.main-header{
+	margin-top:10px;
+	}
+	.video-body{
+	height:60vh;
+	}
+	.video-body .viedo{
+	height:40vh;
+	}
+	.main-comments{
+	height:88vh !important;
+	}
+	.comments{
+	height:28vh !important;
+	}
+	.complaints-body{
+	height:88vh !important;
+	}
+	.content-body{
+	height:60vh !important;
+	}
+	.comments button{
+	display:none;
 	}
 }
 
@@ -431,8 +513,7 @@
 }
 
 .main-header .nav .innerNav2 ul li:hover {
-	color: black;
-	background-color: grey;
+	color:aqua !important;
 }
 
 .like {
