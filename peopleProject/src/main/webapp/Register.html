@@ -16,35 +16,39 @@
         <nav class="innerNav1">
           <ul>
             <li><a href="Home.html">Home</a></li>
-            <li><a href="Register.html">Register</a></li>
+            <li><a href="Main.html">Main Page</a></li>
           </ul>
         </nav>
         <nav class="innerNav2">
           <ul>
-            <li>User</li>
-            <li>Admin</li>
-            <li>Details</li>
+            <li><a href="User.html">User</a></li>
+            <li><a href="Admin.html">Admin</a></li>
             <li class="bar">bar</li>
           </ul>
         </nav>
       </div>
       </header>
-      <form action="register" method="post">
+      <form action="register" method="post" id="form">
       <div class="registerForm">
         <h3 class="register" id="change">Register Now</h3>
       <input type='email' placeholder='Username' name="username" required>
       <input type='password'placeholder='Password' name="password" required>
-      <button type='submit'>Register</button>
+      <button type='submit' onclick="result()">Register</button>
       </div>
     </div>
     </form>
+    <div id="result" style="width:200px;height:100px">${message}</div>
     <script>
-    const get=function (){
+    let form=document.getElementById("form").addEventListener("submit",()=>{
+        let a=document.getElementById("result").value
+        alert(a)
+    })
+   /* const get=function (){
     	fetch('/register').then(response=>response.json())
     	.then(data=>{
     		document.getElementById('change').innerHtml=data.message;
     	})
-    }
+    }*/
     </script>
 </body>
 </html>
